@@ -129,6 +129,45 @@
             padding-top: 40px;
             padding-left: 40px;
         }
+        #pop{
+            background: #000;
+            color: #fff;
+            border-radius: 30px;
+            transition: all 0.25s ease;
+            position: relative;
+        }
+        #pop:hover{
+            transform: translate(-12px,-12px);
+        }
+        #pop:hover::before{
+            transform: translate(12px,12px);
+        }
+        #pop:hover::after{
+            transform: translate(6px,6px);
+        }
+        #pop::after,#pop::before{
+            content: "";
+            position: absolute;
+            opacity: 0.3;
+            border-radius: inherit;
+            background: #000;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: all 0.25s ease;
+        }
+        button{
+            padding: 20px 50px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border: 0px;
+            background: transparent;
+            position: relative;
+            margin: 20px;
+            transition: all 0.25s ease;
+        }
 
         @media screen and (max-width:760px){
         .title{
@@ -202,6 +241,45 @@
             padding-top: 20px;
             height: 350px;
         }
+        #pop{
+            background: #000;
+            color: #fff;
+            border-radius: 30px;
+            transition: all 0.25s ease;
+            position: relative;
+        }
+        #pop:hover{
+            transform: translate(-12px,-12px);
+        }
+        #pop:hover::before{
+            transform: translate(12px,12px);
+        }
+        #pop:hover::after{
+            transform: translate(6px,6px);
+        }
+        #pop::after,#pop::before{
+            content: "";
+            position: absolute;
+            opacity: 0.3;
+            border-radius: inherit;
+            background: #000;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: all 0.25s ease;
+        }
+        button{
+            padding: 20px 50px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border: 0px;
+            background: transparent;
+            position: relative;
+            margin: 20px;
+            transition: all 0.25s ease;
+        }
     }
     </style>
 </head>
@@ -209,10 +287,10 @@
     <div class="main">
 
         <div class = "title">
-            <div class = "port">portfolio</div>
             <div id = "box">
-                <button id="pop">pop</button>
+                <button id = "pop">pop</button>
             </div>
+            <div class = "port">folio</div>
             <div>
                 <img src="s1.png" alt="s1" width="150px" id="s">
             </div>
@@ -237,7 +315,7 @@
                                 <img src="https://logodix.com/logo/1137946.png" alt="cc" width="50px" class="code" >
                                </div>
                         </div>
-                        <img src="phra.png" alt="me"  height="600px" id="pra">
+                        <img src="phra.PNG" alt="me"  height="600px" id="pra">
                     </div>
                     
             
@@ -282,9 +360,9 @@
         <div class="con">
             <div class="tact">contact</div>
             <a href="https://www.instagram.com/realluczy/"><img src="https://www.pngarts.com/files/11/IG-Logo-PNG-Transparent-Image.png" alt="ig" width="50px"></a>
-            <a href="https://www.instagram.com/realluczy/"><img src="http://4.bp.blogspot.com/-Rm3giw7mj_8/VQLP1ZWAVwI/AAAAAAAAXw0/WPoJhWJu_aY/s1600/facebook-iOS-icon.png" alt="facebook" width="50px"></a>
-            <a href="https://www.instagram.com/realluczy/"><img src="https://webstockreview.net/images/mail-clipart-vector-icon-13.png" alt="gmail" width="50px"></a>
-            <a href="https://www.instagram.com/realluczy/"><img src="http://goodkindofgeek.files.wordpress.com/2013/02/line-app-logo.png" alt="line" width="50px"></a>
+            <a href="https://web.facebook.com/profile.php?id=100011463821833"><img src="http://4.bp.blogspot.com/-Rm3giw7mj_8/VQLP1ZWAVwI/AAAAAAAAXw0/WPoJhWJu_aY/s1600/facebook-iOS-icon.png" alt="facebook" width="50px"></a>
+            <a href="mailto:puckanut2549@gmail.com"><img src="https://webstockreview.net/images/mail-clipart-vector-icon-13.png" alt="gmail" width="50px"></a>
+            <a href="https://line.me/ti/p/D742CJuApb"><img src="http://goodkindofgeek.files.wordpress.com/2013/02/line-app-logo.png" alt="line" width="50px"></a>
         </div>
     
 
