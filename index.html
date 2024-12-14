@@ -3,400 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Kanit:wght@200;300;400&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Hind+Siliguri:wght@300&family=Kanit:wght@200;300;400&display=swap');
-        
-        .title{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-direction: row;
-            background-image: linear-gradient(#FF2CDF,#0014FF);
-        }
-        .under{
-            display: flex;
-            flex-direction: column;
-            background-image: linear-gradient(#0c0931,#1d1856);
-            align-items: center;
-            
-        }
-        .down{
-            display: flex;
-            flex-direction: column;
-            /* background-color: aquamarine; */
-            /* align-items: center; */
-            /* justify-content: space-around; */
-        }
-        .cer{
-            display: grid;
-            grid-template-columns: 400px 400px 400px ;
-            grid-template-rows: 300px 300px 300px;
-            grid-gap: 10px;
-        }
-        .ac{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-content: center;
-            padding-bottom: 10px;
-            padding-bottom: 100px;
-        }
-        /* .posn{
-            width: 1000px;
-        } */
-        .port{
-            font-size: 50px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            margin: 10px;
-            color: seashell;
-        }
-        .abtme{
-            display: flex;
-            /* justify-content: space-around; */
-            background-color: solid black;
-            padding: 10px;
-        }
-        .code{
-            width: 100px;
-        }
-        .b{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            padding-bottom: 100px;
-        }
-        .c{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .me{
-            font-size: 40px;
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+
+        body {
+            margin: 0;
             font-family: 'Kanit', sans-serif;
-            color: rgb(255, 255, 255);
-            padding: 10px;
-        }
-        .name{
-            font-size: 60px;
-            font-family: 'Kanit', sans-serif;
-            color: #cbdf1e;
-        }
-        .nick{
-            font-size: 25px;
-            color: rgb(255, 255, 255);
-            padding: 10px;
-        }
-        .posn{
-            align-content: center;
-        }
-        .skill{
-            display: flex;
-            flex-direction: column;
-            background-color: wheat;
-            font-family: 'Hind Siliguri', sans-serif;
-            font-size: 25px;
-            justify-content: space-around;
-            align-items: center;
-            /* width: 500px; */
-        }
-        .con{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            padding-top: 5px;
-            font-size: 25px;
-            background-color: #0c0931;
-            color: azure;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-        .certi,.acti{
-            font-family: 'Hind Siliguri', sans-serif;
-            font-size: 25px;
-            color: aliceblue;
-        }
-        .k1,.k2,.k3,.k4,.k5,.k6{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #cbdf1e;
-        }
-        .pra{
-            padding-top: 40px;
-            padding-left: 40px;
-        }
-        #pop{
-            background: #000;
-            color: #fff;
-            border-radius: 30px;
-            transition: all 0.25s ease;
-            position: relative;
-        }
-        #pop:hover{
-            transform: translate(-12px,-12px);
-        }
-        #pop:hover::before{
-            transform: translate(12px,12px);
-        }
-        #pop:hover::after{
-            transform: translate(6px,6px);
-        }
-        #pop::after,#pop::before{
-            content: "";
-            position: absolute;
-            opacity: 0.3;
-            border-radius: inherit;
-            background: #000;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            bottom: 0;
-            z-index: -1;
-            transition: all 0.25s ease;
-        }
-        button{
-            padding: 20px 50px;
-            font-size: 1.5rem;
-            border: 0px;
-            background: transparent;
-            position: relative;
-            margin: 20px;
-            transition: all 0.25s ease;
+            background-color: #f4f4f9;
+            color: #333;
         }
 
-        @media screen and (max-width:760px){
-        .title{
+        header {
             display: flex;
-            flex-direction: row;
-        }
-        .under{
-            display: flex;
-            flex-direction: column;
-            background-image: linear-gradient(#0c0931,#1d1856);
-        }
-        .down{
-            display: flex;
-            flex-direction: column;
-            background-image: linear-gradient(#0c0931,#1d1856);
-        }
-        .cer{
-            display: flex;
-            flex-direction: column;
-            grid-gap: 10px;
-        }
-        .ac{
-            display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-        }
-        .code{
-            width: 60px;
-        }
-        .port{
-            font-size: 30px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            margin: 10px;
-            color: seashell;
-        }
-        .abtme{
-            background-color: solid black;
-            margin: 10px;
-        }
-        .a{
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        .b{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .me{
-            font-size: 23px;
-            font-family: 'Kanit', sans-serif;
-            color: rgb(255, 255, 255);
-        }
-        .name{
-            font-size: 30px;
-            font-family: 'Kanit', sans-serif;
-            color: #cbdf1e;
-        }
-        .nick{
-            font-size: 15px;
-            color: rgb(255, 255, 255);
-        }
-        .posn{
-            align-content: center;
-        }
-        .skill{
-            display: flex;
-            flex-direction: row;
-            background-color: wheat;
-        }
-        #pra{
-            padding-top: 20px;
-            height: 350px;
-        }
-        #pop{
-            background: #000;
+            background: linear-gradient(to right, #FF2CDF, #0014FF);
+            padding: 20px 40px;
             color: #fff;
-            border-radius: 30px;
-            transition: all 0.25s ease;
-            position: relative;
         }
-        #pop:hover{
-            transform: translate(-12px,-12px);
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
         }
-        #pop:hover::before{
-            transform: translate(12px,12px);
+
+        header img {
+            height: 50px;
         }
-        #pop:hover::after{
-            transform: translate(6px,6px);
+
+        main {
+            padding: 40px;
         }
-        #pop::after,#pop::before{
-            content: "";
-            position: absolute;
-            opacity: 0.3;
-            border-radius: inherit;
-            background: #000;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            bottom: 0;
-            z-index: -1;
-            transition: all 0.25s ease;
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
         }
-        button{
-            font-size: 1rem;
-            cursor: pointer;
-            border: 0px;
-            background: transparent;
-            position: relative;
-            transition: all 0.25s ease;
+
+        .intro h1 {
+            font-size: 2.5rem;
+            color: #0014FF;
         }
-    }
+
+        .intro p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .skills, .certificates, .activities {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #FF2CDF;
+            text-align: center;
+        }
+
+        .skills img, .certificates img, .activities img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .certificates .grid {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        footer {
+            background: #0014FF;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            margin: 0 10px;
+            color: #FF2CDF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .intro h1 {
+                font-size: 2rem;
+            }
+
+            .intro p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="main">
+    <header>
+        <div class="logo">Portfolio</div>
+        <img src="s1.png" alt="Logo">
+    </header>
 
-        <div class = "title">
-            <div id = "box">
-                <button id = "pop">pop</button>
-            </div>
-            <div class = "port">folio</div>
-            <div>
-                <img src="s1.png" alt="s1" width="150px" id="s">
-            </div>
-            <div id="element1"></div>
-        </div>
+    <main>
+        <section class="intro">
+            <h1>Hello, I am Puckanut Laoarpasuwong</h1>
+            <p>Satriwitthaya2 Student | Nickname: Nut | 17 Years Old</p>
+            <p>Birthday: 18 July 2006</p>
+        </section>
 
-        <div class="under">
-            
-                    <div class="b">
-                        <div>
-                            <div class="me"> Hello,
-                                <div class="name">I am Puckanut Laoarpasuwong</div>
-                                Satriwitthaya2 Student
-                                <div class="nick">
-                                My Nickname is Nut I'm 17 Y
-                               <br>
-                                My Birthday is 18 July 2006
-                            </div>
-                               </div>
-                               <div class="skill">my skills
-                                <img src="https://www.pngkit.com/png/full/101-1010012_download-png.png" alt="c" width="50px" class="code">
-                                <img src="https://logodix.com/logo/1137946.png" alt="cc" width="50px" class="code" >
-                               </div>
-                        </div>
-                        <img src="phra.PNG" alt="me"  height="600px" id="pra">
-                    </div>
-                    
-            
-            <div class="down">
-                <div class="c">
-                    <div class="certi">certificates</div>
-                    <div class="cer">
-                        <div class="k1">
-                            <img src="k1.png" width="350px">
-                            <p>workshop antenna for tv digitol</p>
-                        </div>
-                        <div class="k2">
-                            <img src="k2.png" width="350px">
-                            <p>k-engineering world tour 2023</p>
-                        </div>
-                        <div class="k3">
-                            <img src="k3.png" width="350px">
-                            <p>workshop wind tunnel</p>
-                        </div>
-                        <div class="k4">
-                            <img src="k4.png" width="350px">
-                            <p>diy heart beat sensor</p>
-                        </div>
-                        <div class="k5">
-                            <img src="k5.png" width="350px">
-                            <p>k-engineering world tour 2022</p>
-                        </div>
-                        <div class="k6">
-                            <img src="k6.png" width="330px">
-                            <p>it camp kmitl</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ac">
-                    <div class="acti">activities</div>
-                    <div class="posn"><img src="posn.jpg" alt="posncom" width="400px"></div>
-                    <!-- <div class="photo"></div> -->
-                </div>
+        <section class="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="grid">
+                <img src="https://www.pngkit.com/png/full/101-1010012_download-png.png" alt="C Programming">
+                <img src="https://logodix.com/logo/1137946.png" alt="C++ Programming">
             </div>
+        </section>
+
+        <section class="certificates">
+            <h2 class="section-title">Certificates</h2>
+            <div class="grid">
+                <div><img src="k1.png" alt="Workshop Antenna"><p>Workshop Antenna for TV Digital</p></div>
+                <div><img src="k2.png" alt="K-Engineering"><p>K-Engineering World Tour 2023</p></div>
+                <div><img src="k3.png" alt="Wind Tunnel"><p>Workshop Wind Tunnel</p></div>
+                <div><img src="k4.png" alt="Heartbeat Sensor"><p>DIY Heartbeat Sensor</p></div>
+                <div><img src="k5.png" alt="K-Engineering 2022"><p>K-Engineering World Tour 2022</p></div>
+                <div><img src="k6.png" alt="IT Camp"><p>IT Camp KMITL</p></div>
             </div>
-        </div>
-        <div class="con">
-            <div class="tact">contact</div>
-            <a href="https://www.instagram.com/realluczy/"><img src="https://www.pngarts.com/files/11/IG-Logo-PNG-Transparent-Image.png" alt="ig" width="50px"></a>
-            <a href="https://web.facebook.com/profile.php?id=100011463821833"><img src="http://4.bp.blogspot.com/-Rm3giw7mj_8/VQLP1ZWAVwI/AAAAAAAAXw0/WPoJhWJu_aY/s1600/facebook-iOS-icon.png" alt="facebook" width="50px"></a>
-            <a href="mailto:puckanut2549@gmail.com"><img src="https://webstockreview.net/images/mail-clipart-vector-icon-13.png" alt="gmail" width="50px"></a>
-            <a href="https://line.me/ti/p/D742CJuApb"><img src="http://goodkindofgeek.files.wordpress.com/2013/02/line-app-logo.png" alt="line" width="50px"></a>
-        </div>
-    
+        </section>
 
+        <section class="activities">
+            <h2 class="section-title">Activities</h2>
+            <img src="posn.jpg" alt="Activity">
+        </section>
+    </main>
 
-    <script>
-        let x=0;
-        let y=0;
-        let e1=document.getElementById("element1");
-        // let ph=document.getElementById("photo");
-        let pho="new.png"
-        let pp=document.getElementById("pra");
-        e1.innerHTML=y;
-        let btn = document.getElementById("pop");
-        let pic=["s1.png","s2.png","s3.png"]
-        // let pho="new.png"
-        let s=document.getElementById("s");
-        btn.addEventListener('click',function(){
-            y+=1
-            y%=2
-            x+=1
-            e1.innerText=x;
-            s.src=pic[y];
-            if(x%2==0&&x<63){
-            
-            // e1.style.background="pink";
-        }
-        else if(x>=63){
-            // pp.src="new.png"
-            // photo.src="new.png"
-            e1.style.background="red";
-            s.src=pic[2];
-            pra.src=pho;
-        }
-        else{
-            // e1.style.background="red";
-        }
-        });
-    </script>
+    <footer>
+        <p>Contact Me:</p>
+        <a href="https://www.instagram.com/realluczy/">Instagram</a>
+        <a href="https://web.facebook.com/profile.php?id=100011463821833">Facebook</a>
+        <a href="mailto:puckanut2549@gmail.com">Gmail</a>
+        <a href="https://line.me/ti/p/D742CJuApb">Line</a>
+    </footer>
 </body>
 </html>
